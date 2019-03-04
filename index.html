@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no ">
+  <title>shangcheng</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
+<style>
+  /* iphone5 1rem == 16px */
+.test{
+    width:20rem;
+    height:10rem;
+    background-color: bisque;
+    text-align: text；
+}
+.hello{
+    color:red;
+    font-size:1rem;
+}
+
+</style>
+<script>
+//得到手机屏幕的宽度
+let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+//设置最大宽度
+if(htmlWidth>750){htmlWidth=750}
+//得到html的Dom元素
+let htmlDom = document.getElementsByTagName('html')[0];
+//设置根元素字体大小
+//iphone5  320/20 =16
+htmlDom.style.fontSize= htmlWidth/20 + 'px';
+</script>
