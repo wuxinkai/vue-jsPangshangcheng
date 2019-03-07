@@ -15,8 +15,10 @@ import {
   List, //列表
   NavBar, //返回按钮
   Field, //表单
+  Tab, //
+  Tabs
 } from 'vant'
-Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(List).use(NavBar).use(Field)
+Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(List).use(NavBar).use(Field).use(Tab).use(Tabs)
 import 'vant/lib/index.css'
 
 //引入手机端插件

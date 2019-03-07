@@ -18,6 +18,16 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: resolve => require(["@/components/pages/Login.vue"], resolve),
+    },
+    { //商品详情
+      path: '/goods',
+      name: 'goods',
+      component: resolve => require(["@/components/pages/Goods.vue"], resolve),
+    },
+    { //大小分类 商品
+      path: '/gategoryList',
+      name: 'gategoryList',
+      component: resolve => require(["@/components/pages/CategoryList.vue"], resolve),
     }
   ]
 })
