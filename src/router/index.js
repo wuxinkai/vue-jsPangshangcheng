@@ -3,13 +3,28 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'ShoppingMall',
-      component: resolve => require(["@/components/pages/ShoppingMall.vue"], resolve),
+  routes: [{ //导航
+      path: '/main',
+      name: 'main',
+      component: resolve => require(["@/components/pages/Main.vue"], resolve),
+      children: [{
+          path: '/',
+          name: 'ShoppingMall',
+          component: resolve => require(["@/components/pages/ShoppingMall.vue"], resolve),
+        },
+        { //购物车
+          path: '/cart',
+          name: 'cart',
+          component: resolve => require(["@/components/pages/Cart.vue"], resolve),
+        },
+        { //大小分类 商品
+          path: '/gategoryList',
+          name: 'gategoryList',
+          component: resolve => require(["@/components/pages/CategoryList.vue"], resolve),
+        },
+      ]
     },
-    {//注册
+    { //注册
       path: '/register',
       name: 'register',
       component: resolve => require(["@/components/pages/Register.vue"], resolve),
@@ -24,10 +39,6 @@ export default new Router({
       name: 'goods',
       component: resolve => require(["@/components/pages/Goods.vue"], resolve),
     },
-    { //大小分类 商品
-      path: '/gategoryList',
-      name: 'gategoryList',
-      component: resolve => require(["@/components/pages/CategoryList.vue"], resolve),
-    }
+
   ]
 })
