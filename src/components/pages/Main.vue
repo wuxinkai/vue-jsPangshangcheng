@@ -58,6 +58,8 @@ export default {
       this.nowPath = this.$route.path
       if (this.nowPath == '/cart') {
         this.active = 2;
+      }else  if (this.nowPath == '/gategoryList') {
+        this.active = 1;
       }
     },
   },

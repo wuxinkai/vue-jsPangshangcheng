@@ -8,8 +8,8 @@ export default new Router({
       name: 'main',
       component: resolve => require(["@/components/pages/Main.vue"], resolve),
       children: [{
-          path: '/',
-          name: 'ShoppingMall',
+          path: '/shoppingMall',
+          name: 'shoppingMall',
           component: resolve => require(["@/components/pages/ShoppingMall.vue"], resolve),
         },
         { //购物车
@@ -23,6 +23,10 @@ export default new Router({
           component: resolve => require(["@/components/pages/CategoryList.vue"], resolve),
         },
       ]
+    },
+    { //从定向
+      path: '/',
+      redirect: '/shoppingMall',
     },
     { //注册
       path: '/register',
