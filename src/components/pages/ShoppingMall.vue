@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <!--  -->
+    <!-- swiper 数据  -->
     <swiperDefault></swiperDefault>
     <swiper2Default></swiper2Default>
     <swiper3Default></swiper3Default>
@@ -199,6 +199,7 @@ export default {
   padding: 0.3rem;
   font-size: 12px;
   text-align: center;
+  flex: 1 /*平等分布*/
 }
 
 /* 商品推荐 */
@@ -228,5 +229,8 @@ export default {
   font-size: 14px;
   height: 1.8rem;
   line-height: 1.8rem;
+}
+.hot-goods{
+  padding-bottom: 60px;
 }
 </style>

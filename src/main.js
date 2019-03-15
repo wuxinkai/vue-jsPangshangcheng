@@ -16,9 +16,13 @@ import {
   NavBar, //返回按钮
   Field, //表单
   Tab, //
-  Tabs
+  Tabs,
+  PullRefresh, //下拉刷新组件
+  Stepper,
+  Tabbar,
+  TabbarItem
 } from 'vant'
-Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(List).use(NavBar).use(Field).use(Tab).use(Tabs)
+Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(List).use(NavBar).use(Field).use(Tab).use(Tabs).use(PullRefresh).use(Stepper).use(Tabbar).use(TabbarItem)
 import 'vant/lib/index.css'
 
 //引入手机端插件
