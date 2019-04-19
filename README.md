@@ -1,25 +1,15 @@
-# shangcheng
+# 项目启动流程
 
-> 
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
+(1)进入web文件夹启动vue-cli
+```
 npm run dev
-
-# 启动mongdo 打开cmd 命令行 执行
+```
+(2)先启动数据,打开终端  输入mongod
+```
 mongod
-
-# 启动 koa后台
-cd service
-
-# 进去后执行
-node index.js 
-
+```
+(3)启动 node-koa 后台
+```
+node index.js
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
