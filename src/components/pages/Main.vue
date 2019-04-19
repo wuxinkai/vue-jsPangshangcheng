@@ -41,7 +41,7 @@ export default {
       console.log(active)
       switch (active) {
         case 0:
-          this.$router.push({ name: 'ShoppingMall' })
+          this.$router.push({ name: 'shoppingMall' })
           break;
         case 1:
           this.$router.push({ name: 'gategoryList' })
